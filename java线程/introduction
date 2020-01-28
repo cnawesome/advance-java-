@@ -1,0 +1,46 @@
+	volatile 关键字，是一个变量在多个线程间可见，保证可见性。
+ 	jvm处理线程时，一些相关变量存储在线程存储，不同线程中更改不起作用。
+
+	参见class vol
+
+	volatile 与synchroonized区别
+	volatile 只保证可见性（保证结果的确定，不保证执行过程完整），synchronized不仅保证可见性，也保证原子性。
+
+
+	atomicInteger 原子类
+
+	wait，notify
+
+	wait，锁定对象，释放锁
+	notify，唤醒等待线程
+
+
+	synchroniaed 锁的是对象，
+	局部函数是堆 的对象，static函数是class对象
+
+	lock 手动上锁，手动释放
+	写代码是一般在finally 释放
+
+	进程间通信，用wait，notify
+
+	trylock（）尝试取锁
+
+	面试题：阻塞式同步容器
+	实现方式：condition  参见class cond
+
+	各种容器选择
+
+	在容器选择基础上，有线程池。
+
+
+	execute接口 在线程池框架里是顶层接口
+
+	ExecuteService接口  继承execute接口
+
+	executes是一个使用execute的类
+
+
+	threadpool
+	线程池，保存多个线程，处理多个任务，多余任务在队列等待
+	
+	lambda表达式
